@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+ 
+
+    <title>Omnitrope</title>
+</head>
+
+<body>
+    <header class="welcome-page-header py-2 py-sm-4 my-3">
+        <div class="container py-1">
+            <div class="d-flex justify-content-end justify-content-sm-between align-items-center">
+                <a href="#" class="d-none d-sm-block">
+                    <img src="assets/images/logo.svg" alt="logo">
+                </a>
+                <div class="text-uppercase text-gray text-center">
+                    <a href="#">
+                        FR
+                    </a>
+                    <span>
+                        |
+                    </span>
+                    <a href="#">
+                        En
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-logo d-sm-none">
+                <a href="#">
+                    <img src="assets/images/logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="welcome-page-banner pt-3 pt-md-4 pt-lg-5">
+        <div class="container text-center">
+            <h1 class="big-title">
+                Welcome to
+                <span class="d-block font-weight-bold">
+                    Omnitrope.ca
+                </span>
+            </h1>
+            <p class="text-gray mt-3 pb-lg-3">
+                For Canadian residents only
+            </p>
+            <div class="d-md-flex justify-content-between mt-4 mt-lg-5 pt-lg-4">
+                <a class="button text-white bg-gray font-weight-semibold" href="#">
+                    I am a patient or caregiver
+                </a>
+                <a class="button text-white bg-gray font-weight-semibold" href="hcp.html"> 
+                    I am a healthcare professional
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="welcome-page-footer pt-3 mb-5 pb-xl-4">
+        <div class="footer-top pt-3">
+            <div
+                class="container d-flex flex-column flex-xl-row align-items-center align-items-xl-end justify-content-between">
+                <div class="d-flex mt-5 order-3 order-xl-0 justify-content-between">
+                    <img src="assets/images/footer/1.svg" alt="">
+                    <img src="assets/images/footer/2.svg" alt="">
+                </div>
+                <div class="text-center text-xl-end mt-3 mt-xl-0">
+                    <div class="font-weight-semibold">
+                        <a href="#">
+                            Contact Sandoz
+                        </a>
+                        <span>
+                            |
+                        </span>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                        <span>
+                            |
+                        </span>
+                        <a href="#">
+                            Terms and Conditions
+                        </a>
+                    </div>
+                    <p class="mt-4 pt-xl-3">
+                        &copy; 2022 Sandoz Canada Inc. All rights reserved., 110, rue de Lauzon, Boucherville (QC), J4B
+                        1E6,
+                        Canada.
+                    </p>
+                    <p class="mt-1">
+                        Omnitrope<sup>®</sup>, OmniSource<sup>™</sup>, SurePal® and the Sproutz<sup>®</sup> are
+                        trademarks used under
+                        license by Sandoz
+                        Canada Inc.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Welcome Modal  -->
+    <div class="modal fade" id="welcome-modal" tabindex="-1" aria-labelledby="welcome-modalLabel" aria-hidden="true">
+        <!-- data-bs-backdrop="static" data-bs-keyboard="false" -->
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcome-modalLabel">
+                        <img src="assets/images/logo.svg" alt="logo">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-gray">
+                    <div class="text-center text-md-start mx-auto mb-4 pb-3 pb-lg-0 mb-lg-5">
+                        <p class="mb-3 mb-md-0">
+                            This website is for Canadian healthcare professionals only.
+                        </p>
+                        <p>
+                            Please select your province and enter your medical license number to access the website.
+                        </p>
+                    </div>
+                    <form action="#">
+                        <div class="province-license mx-auto d-lg-flex justify-content-between">
+                            <!-- left  -->
+                            <div>
+                                <label for="select-province">
+                                    <select name="province" id="select-province">
+                                        <option value="#">Province</option>
+                                        <option value="#">Option 1</option>
+                                        <option value="#">Option 2</option>
+                                        <option value="#">Option 3</option>
+                                    </select>
+                                    <img src="assets/images/triangle-down.svg" alt="">
+                                </label>
+                            </div>
+                            <!-- right  -->
+                            <div>
+                                <label for="medical-license-number">
+                                    <select name="medical-license-number" id="">
+                                        <option value="#">Medical License Number</option>
+                                        <option value="#">Option 1</option>
+                                        <option value="#">Option 2</option>
+                                        <option value="#">Option 3</option>
+                                    </select>
+                                    <img src="assets/images/triangle-down.svg" alt="">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button onclick="event.preventDefault()" class="button bg-red font-weight-semibold"  data-bs-dismiss="modal" aria-label="Close">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Balance Popup Modal  -->
+    <div class="modal fade" id="balance-popup-modal" tabindex="-1" aria-labelledby="balance-popup-modal"
+        aria-hidden="true">
+        <!-- data-bs-backdrop="static" data-bs-keyboard="false" -->
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcome-modalLabel">
+                        <img src="assets/images/logo.svg" alt="logo">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-gray">
+                    <p class="mb-3">
+                        <sup>Pr</sup>Omnitrope<sup>®</sup> (somatropin for injection) is indicated for:
+                    </p>
+                    <div class="mb-3">
+                        <p>
+                            <b>Children</b> <br>
+                            The long-term treatment of children, who have growth failure due to an inadequate secretion
+                            of endogenous growth hormone (growth hormone deficiency [GHD]). Other causes of short
+                            stature should be excluded.
+                        </p>
+                    </div>
+                    <div class="mb-3">
+                        <p>
+                            <b>SGA Indication</b> <br>
+                            Omnitrope<sup>®</sup> is indicated for the treatment of growth failure (current height
+                            standard deviation score [SDS] &lt;-2) in short children born SGA (birth weight and/or
+                            length
+                            below -2 SD) and who fail to achieve catch-up growth (height velocity SDS &lt;0 during
+                            the last year) by 2 to 4 years or later.
+                        </p>
+                    </div>
+                    <div class="mb-3">
+                        <p>
+                            <b>TS Indication</b> <br>
+                            The treatment of short stature associated with Turner syndrome in patients whose epiphyses
+                            are not closed.
+                        </p>
+                    </div>
+                    <div class="mb-3">
+                        <p>
+                            <b>
+                                ISS Indication
+                            </b> <br>
+                            The long-term treatment of idiopathic short stature (ISS), also called non-growth
+                            hormone-deficient short stature, defined by height standard deviation score (SDS) <-2.25,
+                                and associated with growth rates unlikely to permit attainment of adult height in the
+                                normal range, in pediatric patients for whom diagnostic evaluation excludes other causes
+                                associated with short stature that should be observed or treated by other means.
+                                Omnitrope® treatment for ISS should be prescribed only for those patients whose
+                                epiphyses are not closed. </p>
+                    </div>
+                    <div class="mb-3">
+                        <p>
+                            <b>
+                                Adults
+                            </b> <br>
+                            Omnitrope<sup>®</sup> (somatropin [rDNA origin] for injection) is indicated for replacement
+                            of endogenous growth hormone in adults with growth hormone deficiency who meet either of the
+                            following two criteria:
+                        </p>
+                    </div>
+                    <p class="mb-3">
+                        <u>Adult Onset (AO):</u> Patients who have growth hormone deficiency, either alone or associated
+                        with multiple hormone deficiencies (hypopituitarism), as a result of pituitary disease,
+                        hypothalamic disease, surgery, radiation therapy, or trauma; or
+                    </p>
+                    <p class="mb-3">
+                        <u>Childhood Onset (CO):</u>
+                        Patients who were growth hormone deficient during childhood as a result of congenital, genetic,
+                        acquired, or idiopathic causes.
+                        Patients who were treated with somatropin for growth hormone deficiency in childhood and whose
+                        epiphyses are closed should be re-evaluated before continuation of somatropin therapy at the
+                        reduced dose level recommended for growth hormone deficient adults.
+                    </p>
+                    <div class="mb-4 pb-3">
+                        <p>
+                            <b>Click <a class="text-red" href="#">here</a> for additional safety information and for a
+                                link to the Product Monograph
+                                discussing:</b>
+                        </p>
+                        <ul>
+                            <li class="d-flex-align-items-start">
+                                <span>•</span> Contraindications in acute critical illness suffering complications
+                                following open heart
+                                surgery, abdominal surgery, multiple accidental trauma, acute
+                                respiratory failure or similar conditions; Prader-Willi Syndrome who are severely obese
+                                or
+                                have severe respiratory impairment; closed epiphyses;
+                                neoplastic activity; known sensitivity to benzyl alcohol 5 mg/1.5 mL only, somatropin,
+                                or to
+                                any other ingredient in the formulation; diabetic retinopathy;
+                                renal transplantation
+                            </li>
+                            <li class="d-flex-align-items-start">
+                                <span>•</span> The most serious warnings and precautions regarding Prader-Willi
+                                Syndrome; patients with
+                                acute critical illness; antibody production
+                            </li>
+                            <li class="d-flex-align-items-start">
+                                <span>•</span> Other relevant warnings and precautions regarding carcinogenesis and
+                                mutagenesis; periodic
+                                thyroid function tests; dependence/tolerance; congenital
+                                disorders; endocrine and metabolism; thyroid function and monitoring requirements; serum
+                                cortisol concentrations; unmasking secondary
+                                hypoadrenalism; fluid retention; insulin-like Growth Factor-I (IGF-I); intracranial
+                                hypertension; local or systemic allergic reactions; musculoskeletal;
+                                frequent examination of GHD secondary to an intracranial lesion; patients taking oral
+                                estrogen; pancreatitis; Prader-Willi syndrome; secondary neoplasm
+                                in survivors of childhood cancer; otitis media and other ear disorders, cardiovascular
+                                disorders, and autoimmune thyroid disease; lipoatrophy; obesity;
+                                pediatric patients with onset of a limp or complaints of hip or knee pain; pregnant and
+                                nursing women; children &lt;3 years of age; adult patients should be monitored for
+                                adverse
+                                events, IGF-1 levels and other parameters of GH response; children should be monitored
+                                with measurement of IGF-1/IGFBP-3 levels and assessed for height increase and velocity
+                            </li>
+                            <li class="d-flex-align-items-start">
+                                <span>•</span> Conditions of clinical use, adverse reactions, drug interactions and
+                                dosing
+                                instructions.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mb-3 text-center pb-2">
+                        <a href="#" class="button bg-red text-white font-weight-semibold"  data-bs-dismiss="modal" aria-label="Close">
+                            Continue
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
